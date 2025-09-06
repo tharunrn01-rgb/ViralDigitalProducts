@@ -41,13 +41,14 @@ products.forEach(product => {
     <h3>${product.name}</h3>
     <p>${product.description}</p>
     <p><strong>${product.price}</strong></p>
-    <button onclick="<a href="upi://pay?pa=tharunrn@ybl&pn=Tharun R N&am=100&cu=INR" target="_blank">
+    <button onclick="window.location.href='${product.checkoutLink}'"
   <button>Buy Now</button>
 </a>"
   `;
 
   productList.appendChild(div);
 });
+
 
 
 

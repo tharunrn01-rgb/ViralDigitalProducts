@@ -4,7 +4,7 @@ const products = [
     description: "50+ trending reels templates to go viral fast!",
     price: "₹19",
     image: "https://via.placeholder.com/400x250?text=Reels+Pack",
-    checkoutLink: "https://pay.easebuzz.in/link/your-easebuzz-link-1"
+   
   },
   {
     name: "ChatGPT Prompt Pack",
@@ -47,5 +47,6 @@ products.forEach(product => {
 
   productList.appendChild(div);
 });
+
 
 

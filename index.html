@@ -4,45 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viral Digital Store</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style1.css">
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>🔥 Viral Digital Store</h1>
-    <p>Instantly download premium digital products</p>
+    <div class="logo">🔥 Viral Digital Store</div>
+    <p>Instant access to trending digital products</p>
   </header>
 
-  <!-- Product Section -->
-  <section class="products">
+  <!-- Product List -->
+  <main id="product-list">
+    <!-- Product 1 -->
     <div class="product">
-      <img src="https://via.placeholder.com/300x200/000000/FFD700?text=Reels+Pack" alt="Reels Pack">
+      <img src="https://via.placeholder.com/400x250/000000/FFD700?text=Reels+Pack" alt="Viral Instagram Reels Pack">
       <h3>Viral Instagram Reels Pack</h3>
-      <p>50+ trending reels templates</p>
-      <p class="price">₹999</p>
-      <button onclick="openForm('https://pay.easebuzz.in/link/your-easebuzz-link-1')">Buy Now</button>
+      <p>50+ trending reels templates to go viral fast!</p>
+      <p><strong>₹999</strong></p>
+      <button onclick="buyNow('https://pay.easebuzz.in/link/your-easebuzz-link-1')">Buy Now</button>
     </div>
 
+    <!-- Product 2 -->
     <div class="product">
-      <img src="https://via.placeholder.com/300x200/000000/FFD700?text=Prompt+Pack" alt="Prompt Pack">
+      <img src="https://via.placeholder.com/400x250/000000/FFD700?text=Prompt+Pack" alt="ChatGPT Prompt Pack">
       <h3>ChatGPT Prompt Pack</h3>
-      <p>100+ AI productivity prompts</p>
-      <p class="price">₹799</p>
-      <button onclick="openForm('https://pay.easebuzz.in/link/your-easebuzz-link-2')">Buy Now</button>
+      <p>100+ powerful prompts for AI productivity.</p>
+      <p><strong>₹799</strong></p>
+      <button onclick="buyNow('https://pay.easebuzz.in/link/your-easebuzz-link-2')">Buy Now</button>
     </div>
-  </section>
 
-  <!-- Checkout Form Modal -->
-  <div class="modal" id="checkoutModal">
-    <div class="modal-content">
-      <span class="close" onclick="closeForm()">&times;</span>
-      <h2>Enter Your Details</h2>
-      <input type="text" id="name" placeholder="Your Name">
-      <input type="email" id="email" placeholder="Your Email">
-      <button onclick="proceedPayment()">Continue to Payment</button>
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="https://via.placeholder.com/400x250/000000/FFD700?text=Notion+Template" alt="Notion Productivity Template">
+      <h3>Notion Productivity Template</h3>
+      <p>Organize your work & life seamlessly with Notion.</p>
+      <p><strong>₹1200</strong></p>
+      <button onclick="buyNow('https://pay.easebuzz.in/link/your-easebuzz-link-3')">Buy Now</button>
     </div>
-  </div>
 
-  <script src="script.js"></script>
+    <!-- Product 4 -->
+    <div class="product">
+      <img src="https://via.placeholder.com/400x250/000000/FFD700?text=AI+Art+Bundle" alt="AI Art Bundle">
+      <h3>AI Art Bundle</h3>
+      <p>100+ unique AI-generated artworks.</p>
+      <p><strong>₹1500</strong></p>
+      <button onclick="buyNow('https://pay.easebuzz.in/link/your-easebuzz-link-4')">Buy Now</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Viral Digital Store | Secure Payments via Easebuzz</p>
+  </footer>
+
+  <script src="script1.js"></script>
 </body>
 </html>

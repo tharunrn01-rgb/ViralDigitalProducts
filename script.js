@@ -3,9 +3,10 @@ const products = [
     name: "Viral Instagram Reels Pack",
     description: "50+ trending reels templates to go viral fast!",
     price: "₹19",
-    image: "https://via.placeholder.com/400x250?text=Reels+Pack",
-   
-  },
+    image: "https://via.placeholder.com/400x250?text=Reels+Pack"
+   checkoutLink: "upi://pay?pa=tharunrn@ybl&pn=Tharun R N&am=100&cu=INR"
+  
+    },
   {
     name: "ChatGPT Prompt Pack",
     description: "100+ powerful prompts for AI productivity.",
@@ -47,6 +48,7 @@ products.forEach(product => {
 
   productList.appendChild(div);
 });
+
 
 
 

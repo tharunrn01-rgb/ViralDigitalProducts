@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
+    a.download-btn {
+      display: inline-block;
+      background: #111;
+      color: #FFD700;
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.download-btn:hover { background: #222; }
+  </style>
+</head>
+<body>
+  <h1>✅ Thank You for Your Purchase!</h1>
+  <p>Dear <span id="custName"></span>, your order was successful.</p>
+  <p>You can now download your product:</p>
+  <a class="download-btn" href="downloads/reels-pack.zip" download>Download Now</a>
+
+  <script>
+    document.getElementById("custName").innerText = localStorage.getItem("customerName") || "Customer";
+  </script>
+</body>
+</html>

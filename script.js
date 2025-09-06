@@ -1,3 +1,9 @@
+// Simple function to redirect to Easebuzz checkout
+function buyNow(link) {
+  window.location.href = link;
+}
+
+
 let currentLink = "";
 
 // Open checkout modal
@@ -28,3 +34,4 @@ function proceedPayment() {
   // Redirect to Easebuzz checkout link
   window.location.href = currentLink;
 }
+

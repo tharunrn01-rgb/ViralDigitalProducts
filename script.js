@@ -46,3 +46,4 @@ products.forEach(product => {
 
   productList.appendChild(div);
 });
+

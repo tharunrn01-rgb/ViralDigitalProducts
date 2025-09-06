@@ -1,33 +1,31 @@
 const products = [
   {
     name: "Viral Instagram Reels Pack",
-    description: "50+ trending reels templates",
-    price: "$12",
-    checkoutLink: "https://buy.stripe.com/test_xxx1" // replace with your real Stripe link
+    description: "50+ trending reels templates to go viral fast!",
+    price: "₹999",
+    image: "https://via.placeholder.com/400x250?text=Reels+Pack",
+    checkoutLink: "https://pay.easebuzz.in/link/your-easebuzz-link-1"
   },
   {
     name: "ChatGPT Prompt Pack",
-    description: "Best prompts for AI productivity",
-    price: "$10",
-    checkoutLink: "https://buy.stripe.com/test_xxx2"
+    description: "100+ powerful prompts for AI productivity.",
+    price: "₹799",
+    image: "https://via.placeholder.com/400x250?text=Prompt+Pack",
+    checkoutLink: "https://pay.easebuzz.in/link/your-easebuzz-link-2"
   },
   {
     name: "Notion Productivity Template",
-    description: "Organize your life with Notion",
-    price: "$15",
-    checkoutLink: "https://buy.stripe.com/test_xxx3"
+    description: "Organize your work & life seamlessly with Notion.",
+    price: "₹1200",
+    image: "https://via.placeholder.com/400x250?text=Notion+Template",
+    checkoutLink: "https://pay.easebuzz.in/link/your-easebuzz-link-3"
   },
   {
     name: "AI Art Bundle",
-    description: "100+ AI generated artworks",
-    price: "$18",
-    checkoutLink: "https://buy.stripe.com/test_xxx4"
-  },
-  {
-    name: "Ultimate E-book Guide",
-    description: "Top strategies for online growth",
-    price: "$11",
-    checkoutLink: "https://buy.stripe.com/test_xxx5"
+    description: "100+ unique AI-generated artworks.",
+    price: "₹1500",
+    image: "https://via.placeholder.com/400x250?text=AI+Art+Bundle",
+    checkoutLink: "https://pay.easebuzz.in/link/your-easebuzz-link-4"
   }
 ];
 
@@ -38,6 +36,7 @@ products.forEach(product => {
   div.className = "product";
 
   div.innerHTML = `
+    <img src="${product.image}" alt="${product.name}">
     <h3>${product.name}</h3>
     <p>${product.description}</p>
     <p><strong>${product.price}</strong></p>
@@ -46,4 +45,3 @@ products.forEach(product => {
 
   productList.appendChild(div);
 });
-

@@ -43,11 +43,12 @@ products.forEach(product => {
     <p><strong>${product.price}</strong></p>
     <button onclick="<a href="upi://pay?pa=tharunrn@ybl&pn=Tharun R N&am=100&cu=INR" target="_blank">
   <button>Buy Now</button>
-</a>">Buy Now</button>
+</a>"
   `;
 
   productList.appendChild(div);
 });
+
 
 
 
